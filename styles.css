@@ -978,9 +978,9 @@ body {
 
 .project-image {
   width: 100%;
-  height: 360px;
-  object-fit: cover;
-  object-position: center top;
+  aspect-ratio: 16 / 9;   /* forces horizontal shape */
+  object-fit: cover;      /* fills nicely without stretching */
+  object-position: top;   /* keeps top (navbar area visible) */
   border-radius: 14px;
   display: block;
   transition: transform 0.25s ease, opacity 0.25s ease;
